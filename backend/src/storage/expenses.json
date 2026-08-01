@@ -1,0 +1,92 @@
+[
+  {
+    "id": "exp_coffee_001",
+    "title": "Coffee",
+    "amount": 188,
+    "category": "Food",
+    "date": "2026-07-28",
+    "note": "Morning espresso at Blue Tokai",
+    "createdAt": "2026-07-28T07:30:00.000Z"
+  },
+  {
+    "id": "exp_uber_002",
+    "title": "Uber",
+    "amount": 428,
+    "category": "Transport",
+    "date": "2026-07-27",
+    "note": "Airport drop",
+    "createdAt": "2026-07-27T09:15:00.000Z"
+  },
+  {
+    "id": "exp_netflix_003",
+    "title": "Netflix",
+    "amount": 649,
+    "category": "Entertainment",
+    "date": "2026-07-26",
+    "note": "Monthly subscription",
+    "createdAt": "2026-07-26T12:00:00.000Z"
+  },
+  {
+    "id": "exp_groceries_004",
+    "title": "Groceries",
+    "amount": 2158,
+    "category": "Shopping",
+    "date": "2026-07-25",
+    "note": "Weekly grocery run",
+    "createdAt": "2026-07-25T11:00:00.000Z"
+  },
+  {
+    "id": "exp_electricity_005",
+    "title": "Electricity Bill",
+    "amount": 1490,
+    "category": "Utilities",
+    "date": "2026-07-24",
+    "note": null,
+    "createdAt": "2026-07-24T10:00:00.000Z"
+  },
+  {
+    "id": "exp_gym_006",
+    "title": "Gym Membership",
+    "amount": 2500,
+    "category": "Health",
+    "date": "2026-07-23",
+    "note": null,
+    "createdAt": "2026-07-23T08:00:00.000Z"
+  },
+  {
+    "id": "exp_protein_007",
+    "title": "Protein Supplements",
+    "amount": 745,
+    "category": "Health",
+    "date": "2026-07-22",
+    "note": "Health store",
+    "createdAt": "2026-07-22T14:00:00.000Z"
+  },
+  {
+    "id": "exp_metro_008",
+    "title": "Metro Card Recharge",
+    "amount": 200,
+    "category": "Transport",
+    "date": "2026-07-21",
+    "note": "Monthly pass",
+    "createdAt": "2026-07-21T08:30:00.000Z"
+  },
+  {
+    "id": "exp_lunch_009",
+    "title": "Office Lunch",
+    "amount": 320,
+    "category": "Food",
+    "date": "2026-07-20",
+    "note": "Canteen",
+    "createdAt": "2026-07-20T13:00:00.000Z"
+  },
+  {
+    "id": "exp_movie_010",
+    "title": "Movie Tickets",
+    "amount": 435,
+    "category": "Entertainment",
+    "date": "2026-07-19",
+    "note": "Weekend show",
+    "createdAt": "2026-07-19T18:00:00.000Z"
+  }
+]
