@@ -9,7 +9,27 @@ import { swaggerSpec } from './docs/swagger';
 
 const app = express();
 
-app.use(cors({ origin: CORS_ORIGINS, credentials: false }));
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      if (!origin) return callback(null, true);
+      const cleanOrigin = origin.replace(/\/$/, '');
+      if (
+        CORS_ORIGINS.includes('*') ||
+        CORS_ORIGINS.includes(cleanOrigin) ||
+        cleanOrigin.endsWith('.vercel.app') ||
+        !process.env.CORS_ORIGINS
+      ) {
+        return callback(null, true);
+      }
+      return callback(null, true);
+    },
+    credentials: false,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  })
+);
+
 app.use(express.json());
 app.use(requestLogger);
 
