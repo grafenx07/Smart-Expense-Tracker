@@ -176,6 +176,8 @@ cd backend && npm test
 
 The test suite uses Jest + Supertest against a temporary fixture file so the seed data is never touched. Each test gets a clean empty store via `beforeEach`.
 
+For complete documentation on test architecture, fixtures, validation cases, and test strategy, see [TESTING.md](file:///d:/Github%20Projects/Smart%20Expense%20Tracker/TESTING.md).
+
 Test coverage:
 
 - Create expense (valid, trimming, field validation)
@@ -251,24 +253,18 @@ frontend/src/
 
 ## Deployment
 
-### Backend
+For step-by-step instructions on deploying via Render, Vercel, Docker Compose, or an Nginx VPS, see [DEPLOYMENT.md](file:///d:/Github%20Projects/Smart%20Expense%20Tracker/DEPLOYMENT.md).
+
+### Quick Build Commands
 
 ```bash
-cd backend
-npm run build
-npm start
+# Backend build & start
+cd backend && npm run build && npm start
+
+# Frontend production bundle
+cd frontend && npm run build
 ```
 
-Set the `PORT` environment variable to override the default `3001`.
-
-### Frontend
-
-```bash
-cd frontend
-npm run build
-```
-
-The `dist/` folder can be served from any static host (Vercel, Netlify, Nginx). The backend URL must be updated in `vite.config.ts` for production.
 
 ---
 
