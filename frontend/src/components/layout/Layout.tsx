@@ -1,4 +1,4 @@
-import { ReactNode, useState, useCallback } from 'react';
+import { useState, useCallback, type ReactNode } from 'react';
 import Sidebar from './Sidebar';
 import TopBar from './TopBar';
 import ExpenseModal from '@/components/expenses/ExpenseModal';

@@ -64,7 +64,12 @@ describe('POST /expenses', () => {
   });
 
   it('returns 400 when title is missing', async () => {
-    const { title: _title, ...body } = VALID_EXPENSE;
+    const body = {
+      amount: VALID_EXPENSE.amount,
+      category: VALID_EXPENSE.category,
+      date: VALID_EXPENSE.date,
+      note: VALID_EXPENSE.note,
+    };
     const res = await request(app).post('/expenses').send(body);
 
     expect(res.status).toBe(400);

@@ -1,4 +1,4 @@
-import { Expense } from '@/types';
+import type { Expense } from '@/types';
 import ExpenseRow from './ExpenseRow';
 import Spinner from '@/components/ui/Spinner';
 

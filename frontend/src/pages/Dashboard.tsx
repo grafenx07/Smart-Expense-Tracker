@@ -2,7 +2,6 @@ import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
 import Card from '@/components/ui/Card';
-import Spinner from '@/components/ui/Spinner';
 import ExpenseTable from '@/components/expenses/ExpenseTable';
 import { useExpenses, useSummary } from '@/hooks/useExpenses';
 import { formatCurrency } from '@/utils/formatters';

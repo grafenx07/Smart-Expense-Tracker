@@ -12,7 +12,6 @@ import {
   Cell,
   BarChart,
   Bar,
-  Legend,
 } from 'recharts';
 import Layout from '@/components/layout/Layout';
 import Card from '@/components/ui/Card';
@@ -20,7 +19,7 @@ import Spinner from '@/components/ui/Spinner';
 import { useExpenses, useSummary } from '@/hooks/useExpenses';
 import { formatCurrency } from '@/utils/formatters';
 import { CATEGORY_CONFIG } from '@/utils/categoryConfig';
-import { Category } from '@/types';
+import type { Category } from '@/types';
 
 interface StatCardProps {
   label: string;
@@ -56,12 +55,14 @@ const CURRENCY_FORMATTER = new Intl.NumberFormat('en-IN', {
   maximumFractionDigits: 0,
 });
 
-function TooltipFormatter(value: number) {
-  return [CURRENCY_FORMATTER.format(value), 'Amount'];
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function TooltipFormatter(value: any) {
+  const numeric = typeof value === 'number' ? value : Number(value ?? 0);
+  return [CURRENCY_FORMATTER.format(numeric), 'Amount'];
 }
 
 export default function Analytics() {
-  const { data: expenses, isLoading: expensesLoading } = useExpenses();
+  const { isLoading: expensesLoading } = useExpenses();
   const { data: summary, isLoading: summaryLoading } = useSummary();
 
   const isLoading = expensesLoading || summaryLoading;

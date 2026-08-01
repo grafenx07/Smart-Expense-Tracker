@@ -3,7 +3,8 @@ import Layout from '@/components/layout/Layout';
 import Card from '@/components/ui/Card';
 import ExpenseTable from '@/components/expenses/ExpenseTable';
 import { useExpenses, useSummary } from '@/hooks/useExpenses';
-import { CATEGORIES, Category, SortOrder, Expense } from '@/types';
+import { CATEGORIES } from '@/types';
+import type { Category, SortOrder, Expense } from '@/types';
 import { formatCurrency } from '@/utils/formatters';
 
 const PAGE_SIZE = 6;

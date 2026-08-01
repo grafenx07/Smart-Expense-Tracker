@@ -4,10 +4,8 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import Modal from '@/components/ui/Modal';
 import Button from '@/components/ui/Button';
-import Input from '@/components/ui/Input';
-import Select from '@/components/ui/Select';
-import Textarea from '@/components/ui/Textarea';
-import { CATEGORIES, Category } from '@/types';
+import { CATEGORIES } from '@/types';
+import type { Category } from '@/types';
 import { useCreateExpense } from '@/hooks/useExpenses';
 import { todayIso } from '@/utils/formatters';
 

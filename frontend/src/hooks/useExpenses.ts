@@ -1,7 +1,7 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'react-hot-toast';
 import { fetchExpenses, fetchSummary, createExpense, deleteExpense } from '@/api/expenses';
-import { Category } from '@/types';
+import type { Category } from '@/types';
 
 export const QUERY_KEYS = {
   expenses: (category?: Category) =>

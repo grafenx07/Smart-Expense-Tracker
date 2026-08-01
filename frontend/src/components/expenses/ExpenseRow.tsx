@@ -1,5 +1,5 @@
 import { memo, useState } from 'react';
-import { Expense } from '@/types';
+import type { Expense } from '@/types';
 import Badge from '@/components/ui/Badge';
 import ConfirmDialog from '@/components/ui/ConfirmDialog';
 import { formatCurrency, formatDate } from '@/utils/formatters';

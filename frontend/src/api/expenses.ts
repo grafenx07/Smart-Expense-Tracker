@@ -1,5 +1,5 @@
 import client from './client';
-import { Expense, ExpenseSummary, Category, ApiSuccess } from '@/types';
+import type { Expense, ExpenseSummary, Category, ApiSuccess } from '@/types';
 
 interface CreateExpensePayload {
   title: string;
