@@ -24,7 +24,8 @@ This project fulfills **100% of required specifications** and delivers **ALL 4 o
 - [x] **Calculate Total Expenses**: Overall & category aggregates via `GET /expenses/summary`
 - [x] **Delete Expense**: `DELETE /expenses/:id`
 - [x] **Local JSON Storage**: Atomic, thread-safe write queue (zero database overhead required)
-- [x] **Clean Monorepo Architecture**: Express + TypeScript REST API and React 19 + Vite SPA
+- [x] **Clean Monorepo Architecture**: Express + TypeScript REST API and React 19 + Vite SPA (Figma-first design)
+- [x] **Figma-First Frontend UI**: UI/UX prototyped and designed in Figma before React component implementation
 - [x] **Required Documents**: Complete `README.md`, human-evaluated `AI_NOTES.md`, `TESTING.md`, `DEPLOYMENT.md`
 
 ### 🎁 Optional Bonus Features Included
@@ -95,10 +96,10 @@ Smart-Expense-Tracker/
 │   │   └── server.ts      HTTP server entry point
 │   └── tests/
 │       └── expenses.test.ts # Supertest integration test suite (20 tests)
-└── frontend/              # React 19 + Vite + TypeScript SPA
+└── frontend/              # React 19 + Vite + TypeScript SPA (Figma-First UI Design)
     └── src/
         ├── api/           Typed Axios API client
-        ├── components/    UI primitives, Modals, ConfirmDialogs, Expense tables
+        ├── components/    UI primitives, Modals, ConfirmDialogs, Expense tables (translated from Figma)
         ├── hooks/         React Query custom data hooks
         └── pages/         Dashboard, Expenses List, Analytics (Recharts)
 ```

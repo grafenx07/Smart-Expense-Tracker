@@ -11,7 +11,7 @@
 
 ## Executive Summary
 
-Throughout building the **Smart Expense Tracker**, I utilized modern AI pair-programming tools (Antigravity AI powered by Claude 3.5 Sonnet / 3.6 Flash) as an intelligent velocity multiplier. My approach was not to blindly generate code, but rather to act as the primary Software Architect and Lead Engineer: defining exact API specs, enforcing clean layered separation of concerns, conducting code reviews, catching build/deployment edge cases, and writing automated test suites.
+Throughout building the **Smart Expense Tracker**, I began by designing and prototyping the frontend interface in Figma first. Using the Figma designs as the visual foundation, I paired with modern AI tools (Antigravity AI powered by Claude 3.5 Sonnet / 3.6 Flash) as an intelligent velocity multiplier. My approach was not to blindly generate code, but rather to act as the primary Software Architect and Lead Engineer: designing the UI/UX in Figma first, defining exact API specs, enforcing clean layered separation of concerns, conducting code reviews, catching build/deployment edge cases, and writing automated test suites.
 
 This document details the division of labor, my validation methodology, adjustments made to AI suggestions, and architectural trade-offs.
 
@@ -20,6 +20,7 @@ This document details the division of labor, my validation methodology, adjustme
 ## 1. Division of Labor: AI Generation vs. Human Guidance
 
 ### Human-Led Architecture & Guidance (Grafenberg Langpen)
+* **Figma-First Design & Prototyping**: Designed and prototyped the frontend UI in Figma first, defining the visual identity, layout hierarchy, color palette, responsive structures, and component states prior to code generation.
 * **Domain & System Architecture**: Designed the 5-tier architecture (`Route → Controller → Service → Repository → Storage`) to guarantee strict separation of concerns, ensuring zero business logic leaked into HTTP handlers.
 * **Concurrency Model Design**: Specified the promise-chained write-queue pattern (`enqueueWrite` + atomic temp-file rename) for JSON storage to guarantee zero data corruption under concurrent write requests.
 * **Schema & Boundary Constraints**: Defined strict input validation parameters (e.g., max 40 chars for expense titles, 165 chars for notes, positive non-zero amounts, ISO `YYYY-MM-DD` date formatting).
@@ -28,7 +29,7 @@ This document details the division of labor, my validation methodology, adjustme
 
 ### AI-Assisted Implementation
 * **Boilerplate & Scaffold Generation**: Accelerated setup of Express routing tables, Zod validation schemas, Swagger OpenAPI annotations, and React Query custom hooks.
-* **UI Component Assembly**: Scaffolded Tailwind CSS layout components, Recharts visualizations, and reusable React UI primitives (`Modal`, `ConfirmDialog`, `Badge`, `Spinner`).
+* **Figma-to-Code Component Assembly**: Translated the Figma UI designs into responsive Tailwind CSS components, Recharts data visualizations, and reusable React UI primitives (`Modal`, `ConfirmDialog`, `Badge`, `Spinner`).
 * **Test Case Expansion**: Expanded the integration test suite to cover multi-variant validation scenarios (zero amount, negative amount, character overflow, empty state).
 
 ---
