@@ -61,8 +61,9 @@ const TopBar = memo(function TopBar({ title, subtitle, onAddExpense, showSearch 
           className="w-7 h-7 rounded-full bg-[#4f6ef7] flex items-center justify-center shrink-0"
           aria-hidden="true"
         >
-          <span className="text-xs font-semibold text-white">AR</span>
+          <span className="text-xs font-semibold text-white">GL</span>
         </div>
+
 
         <Button
           variant="primary"
