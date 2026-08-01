@@ -53,9 +53,10 @@ export default function Dashboard() {
     >
       {/* Welcome */}
       <div className="mb-6">
-        <h2 className="text-xl font-bold text-[#111827]">Welcome back, Arjun</h2>
+        <h2 className="text-xl font-bold text-[#111827]">Welcome back, Grafenberg</h2>
         <p className="text-sm text-[#6b7280] mt-0.5">Here is how your spending looks this month.</p>
       </div>
+
 
       {/* Stat cards */}
       {isLoading ? (

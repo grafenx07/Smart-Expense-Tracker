@@ -91,12 +91,13 @@ export default function Sidebar() {
       <div className="px-4 py-4 border-t border-[#f3f4f6]">
         <div className="flex items-center gap-3">
           <div className="w-8 h-8 rounded-full bg-[#4f6ef7] flex items-center justify-center shrink-0">
-            <span className="text-xs font-semibold text-white">AR</span>
+            <span className="text-xs font-semibold text-white">GL</span>
           </div>
           <div className="min-w-0">
-            <p className="text-sm font-medium text-[#111827] truncate">Arjun Rao</p>
-            <p className="text-xs text-[#9ca3af] truncate">arjun@acme.dev</p>
+            <p className="text-sm font-medium text-[#111827] truncate">Grafenberg Langpen</p>
+            <p className="text-xs text-[#9ca3af] truncate">grafenberglangpen7@gmail.com</p>
           </div>
+
         </div>
       </div>
     </aside>
